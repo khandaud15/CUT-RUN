@@ -40,7 +40,7 @@ done
 
 
 # create bowtie2 index database (database name: hg38)
-#bowtie2-build $Fasta  $Genome
+bowtie2-build $Fasta  $Genome
 
 
 #### Trim the adapters using Trimmomatic
