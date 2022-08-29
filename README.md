@@ -21,4 +21,4 @@ pip install deeptools
 ### To run the script on the cluster, use the following command
 ```
 sbatch cut_run.sh
-'''
+```
