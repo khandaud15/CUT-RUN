@@ -1,5 +1,7 @@
-# CUT-RUN
+## CUT-RUN
 full pipeline to process the cut&amp;run Data on slurm
+
+### install all the tool required for running the workflow by creating anaconda environment 
 
 ```
 module load gcc
