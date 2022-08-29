@@ -1,7 +1,7 @@
-## CUT-RUN
-full pipeline to process the cut&amp;run Data on slurm
+### CUT-RUN Analysis
+Full pipeline to process the CUT&RUN Dataset on the uchicago Midway3/Midway3 cluster
 
-### install all the tool required for running the workflow by creating anaconda environment 
+### Install all the tool required for running the workflow by creating anaconda environment 
 
 ```
 module load gcc
