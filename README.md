@@ -17,3 +17,8 @@ conda install -c bioconda seacr
 conda install -c bioconda bedtools
 pip install deeptools
 ```
+
+### To run the script on the cluster, use the following command
+```
+sbatch cut_run.sh
+'''
