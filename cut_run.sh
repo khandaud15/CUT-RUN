@@ -258,6 +258,24 @@ for infile in *_treat.stringent.bed
 
 done
 
+##### heatmap for peaks using midpoint using mac2 broad output
+HeatMapCR_Mac2=$workdir/HeatMapCRMac2
+[[ -d ${HeatMapCR_Mac2} ]] || mkdir -p ${HeatMapCR_Mac2}
+
+
+cd ${outdirbroad}
+
+for infile in *_summits.bed
+        do
+        base=$(basename ${infile} _summits.bed)
+        computeMatrix reference-point -R ${infile} -S ${unNormbigwig}/"$base".sorted.bw \
+        --skipZeros -o ${HeatMapCR_Mac2}/${base}_mac2.un.mat.gz -p $cores -a 3000 -b 3000 --referencePoint center
+
+        plotHeatmap -m ${HeatMapCR_Mac2}/${base}_mac2.un.mat.gz  -out ${HeatMapCR_Mac2}/${base}_mac2_heatmap_un.png --sortUsing sum --startLabel "Peak Start" --endLabel "Peak End" --xAxisLabel "" --regionsLabel "Peaks" --samplesLabel "${base}"
+
+done
+
+echo "Hasta la vista" 
 echo "# "
 echo "#        Congrats! The CUT & RUN  analysis is complete!"
 echo "# "
