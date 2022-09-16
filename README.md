@@ -1,5 +1,5 @@
 ### CUT-RUN Analysis
-Full pipeline to process the CUT&RUN Dataset on the uchicago Midway3/Midway3 cluster
+Full pipeline to process the CUT&RUN Dataset on the uchicago Midway2/Midway3 cluster
 
 ### Install all the tool required for running the workflow by creating anaconda environment 
 
